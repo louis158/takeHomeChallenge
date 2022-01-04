@@ -1,0 +1,28 @@
+<%- include("header") -%>
+
+<% if(locals.message != null){ %>
+    <div class="alert alert-danger" role="alert"><%= message %></div>
+ 
+ <%} else{ %>
+    <p></p>
+  <% } %>
+
+<form action="/signup" method="post" class="sigup-signin-form">
+<div class="sign-up">
+    <div>
+    <input type="text" placeholder="Username" class="sign-in-username" name="username">
+</div>
+<div>
+    <input type="password" placeholder="Password" class="sign-in-password" name="password">
+</div>
+<div>
+    <input type="password" placeholder="Confirm Password" class="sign-in-password" name="confirm">
+</div>
+<div>
+    <button type="submit">Sign Up</button>
+</form>
+    <a href="/">Sign in</a>
+    
+    
+</div>
+</div>

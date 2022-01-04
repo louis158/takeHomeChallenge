@@ -1,0 +1,21 @@
+<%- include("header") -%>
+
+<form action="logout" method="post">
+  <div class="home-page-header">
+    <input type="submit" value="Logout" class="logout-button" />
+    <h1 id="welcome">welcome <%= username %></h1>
+    <a href="/videos" class="tab">My Videos</a>
+  </div>
+</form>
+<% if(locals.message != null){ %>
+  <div class="alert alert-success" role="alert"><%= message %></div>
+<%} else{ %>
+  <p></p>
+<% } %>
+<form action="/upload" method="post" enctype="multipart/form-data" class="upload-video">
+  <label for="video">Select Video to Upload:</label>
+  <input type="file" id="video" name="video" />
+  <input type="submit" value="Upload" />
+</form>
+      
+

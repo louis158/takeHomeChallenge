@@ -1,0 +1,20 @@
+<%- include("header") -%>
+<form action="logout" method="post">
+    <div class="home-page-header">
+      <input type="submit" value="Logout" class="logout-button" />
+      <h1 id="welcome">welcome <%= username %></h1>
+      <a href="/home" class="tab">Home</a>
+    </div>
+  </form>
+<h1>Uploaded Videos</h1>
+    
+        <% items.forEach(function(video) { %>
+        <div>
+        <video id="videoPlayer" controls>
+            <source src="data:video/<%=video.video.contentType%>;base64,
+            <%=video.video.data.toString('base64')%>" type="video/mp4" class="video">
+        </video>
+   </div>
+   <hr>
+                  <% }) %>
+                

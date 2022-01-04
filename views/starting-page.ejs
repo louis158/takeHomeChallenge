@@ -1,0 +1,25 @@
+<%- include("header") -%>
+<% if(locals.message != null && locals.message === "Successfully Signed up, please sign in"){ %>
+    <div class="alert alert-success" role="alert"><%= message %></div>
+    <% }else if(locals.message != null && locals.message === "Username and password cannot be empty"){ %>
+        <div class="alert alert-danger" role="alert"><%= message %></div>
+        <% }else if(locals.message != null && locals.message === "Invalid Username or Password"){ %>
+            <div class="alert alert-danger" role="alert"><%= message %></div>
+ <%} else{ %>
+    <p></p>
+  <% } %>
+  <form action="signin" method="post" class="sigup-signin-form">
+<div class="sign-in">
+    <div>
+    <input type="text" placeholder="Username" class="sign-in-username" name="username">
+</div>
+<div>
+    <input type="password" placeholder="Password" class="sign-in-password" name="password">
+</div>
+<div>
+    <button type="submit">Sign In</button>
+</form>
+    <a href="/signup">Sign Up</a>
+    
+</div>
+</div>

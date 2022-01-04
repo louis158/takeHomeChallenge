@@ -1,0 +1,90 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+  }
+
+  .sigup-signin-form {
+    text-align: center;
+    height: 100%;
+    padding-top: 15%;
+  }
+
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.sign-in a, .sign-up a {
+    width: auto;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    display: block;
+}
+
+.home-page-header {
+  height: 100px;
+  background-color: grey;
+  padding: 15px;
+  color: #fff;
+}
+
+.logout-button {
+  background-color: red;
+  width: 120px;
+  margin: 20px;
+  float: right;
+}
+
+.upload-video {
+  margin: auto;
+  margin-top: 200px;
+  width: 30%;
+  border: 3px solid #04AA6D;
+  padding: 10px;
+  text-align: center;
+}
+
+.tab{
+  text-decoration: none;
+  font-size: 20px;
+  height: 120px;
+  color: white 
+}
+
+#videoPlayer {
+  width: 50%;
+  margin: 10px;
+  align-items: center;
+}
